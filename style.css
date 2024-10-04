@@ -1,0 +1,268 @@
+/* head section start  */
+nav {
+    /* width: 90%; */
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 5px;
+   /* position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%; */
+ 
+   
+}
+nav >div h1{
+    font-size: 30px;
+}
+
+nav >div P{
+    display: inline-block;
+    padding-right: 30px;
+}
+nav >div a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: navy;
+}
+nav >div a:hover{
+    color: red;
+    transition: all;
+   transition-duration:1s;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 5px;
+}
+/* head section end */
+
+/* order section start */
+#parent{
+    /* border: 1px solid; */
+    margin-top: 15px;
+    width:90% ;
+    margin: auto;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid; */
+    gap: 20px;
+    width:90% ;
+    margin: auto;
+  
+}
+.cards > div {
+    /* border: 1px solid; */
+    text-align: center;
+    background-color: red;
+}
+.cards > div img{
+    padding-top: 40px;
+    height: 50%;
+    width: 50%;
+}
+.cards > div p{
+    color: #fff;
+    font-size: 20px;
+}
+.cards > div button{
+    color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 30px;
+    background-color: #fff;
+    width: 150px;
+    margin-bottom: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.cards > div h3{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+/* order section end */
+
+
+/*  expolore section start */
+#akd{
+    margin-top: 15px;
+    width:90% ;
+    margin: auto;
+}
+.expolore{
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+.expolore div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+.expolore div img{
+   
+    height: 150px;
+}
+.expolore div h4{
+    color: red;
+}
+/* expolore section end */
+
+/* footer section start  */
+footer{
+    background-color: #F4F4F4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+footer .left img{
+width: 80%;
+height: 100%;
+padding-right: 20px;
+}
+footer .right {
+    text-align: center;
+}
+
+footer .right div img{
+    width: 35%;
+    padding-right: 40px;
+}
+/* footer section end */
+
+/* responsive start  */
+
+/* mid size screen  */
+
+/* navbar start  */
+@media screen and (min-width:768px) and (max-width:1245px) {
+    nav {
+        /* width: 90%; */
+        height: 45px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin: auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       border-radius: 5px;
+       
+    }
+    nav >div h1{
+        font-size: 20px;
+        padding-right: 5px;
+        color: red;
+    }
+    nav >div P{
+        display: inline-block;
+        padding-right: 10px;
+    }
+    nav >div a{
+        text-decoration: none;
+        font-size: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: navy;
+        padding-right: 5px;
+    }
+    /* navbar end  */
+
+    /* order section start */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width:90% ;
+        margin: auto;
+      
+      
+    }
+     /* order section end */
+
+      /*expolore section start  */
+    .expolore{
+   
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+    .expolore div img{
+   
+        height: 125px;
+    }
+    /* expolore section end  */
+}
+
+/* small  size screen  */
+@media screen and (min-width:200px) and (max-width:767px)
+{
+   
+    nav >div h1{
+        font-size: 30px;
+        padding-right: 5px;
+        color: black;
+    }
+    nav >div a{
+       display: none;
+    }
+    .btn{
+        width: 150px;
+        height: 50px;
+        background-color: #ff0000;
+        color: white;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        border: none;
+        border-radius: 5px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width:90% ;
+        margin: auto;
+      
+      
+    }
+    .expolore{
+   
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+    footer{
+     display: block;
+    }
+}
+@media screen and (min-width:200px) and (max-width:500px){
+    .expolore{
+   
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+}
+/* responsive end */
